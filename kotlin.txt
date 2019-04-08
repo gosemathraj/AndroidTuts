@@ -27,7 +27,12 @@ Methods for Null Checking
 Safe Calls (?.) -->  	Consider somevariable?.methodCall() --> This will call the method if the someVariable is not null.
 																Or else returns null without Null Pointer Exception(NPE)
 
-Safe Call (?.) with let --> (?.let)
+Safe Call (?.) with let --> (?.let) --> 
 
 Elvis Operator (?:) --> Safe Call operator returns null if it finds any null value.But to return non null values Elvis Operator is used
+val result = nullableVariable?.someMethodCall() --> If it returns null the below expression is called
+             ?: fallbackIfNullMethodCall()		--> It is called if the above expression is null 
+			 
+!! operator (The Null Operator)
+someVariable!!.someMethod() --> It Tells the compiler that someVariable is not null.If it is null throw Null Pointer Exception(NPE)
 
