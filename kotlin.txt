@@ -36,3 +36,13 @@ val result = nullableVariable?.someMethodCall() --> If it returns null the below
 !! operator (The Null Operator)
 someVariable!!.someMethod() --> It Tells the compiler that someVariable is not null.If it is null throw Null Pointer Exception(NPE)
 
+Access Modifiers in Kotlin
+public --> Can be accessed anywhere(Default in Kotlin)(Java has a default access specifier - Which is package private.Anyone in package can access it)
+protected --> Can be accessed only in Subclasses (Same in Java and Kotlin)
+private --> Cannot be accessed outside the class (Same in Java and Kotlin)
+internal --> Can be accessed only in Modules(Classes that are compiled together) (Not in Java)
+
+
+Constructors in kotlin 
+
+
